@@ -4,7 +4,7 @@ class Characters extends Component {
 
     render() {
         return (
-        <div>Characters</div>
+        <div className='card-container'>Characters</div>
         )
     }
 }
