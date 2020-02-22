@@ -21,9 +21,11 @@ class CharactersPage extends Component {
     }
 
     addToFavorites = (char) => {
-        this.setState(prevState => ({
-            favCharacters: [...prevState.favCharacters, char]
-        }))
+        if (!this.state.favCharacters.includes(char)) {
+            this.setState(prevState => ({
+                favCharacters: [...prevState.favCharacters, char]
+            }))
+        }
     }
 
     handleCharacterClick = (char) => {
