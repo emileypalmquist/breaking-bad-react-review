@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Characters from '../containers/Characters.js'
 import FavCharacters from '../containers/FavCharacters.js'
+import CharacterInfo from '../components/CharacterInfo.js'
 
 
 // https://www.breakingbadapi.com/api/characters
@@ -29,7 +30,6 @@ class CharactersPage extends Component {
     }
 
     handleCharacterClick = (char) => {
-        console.log(char)
         this.setState({
             character: char
         })
@@ -54,7 +54,7 @@ class CharactersPage extends Component {
         return (
             <div>
                 <FavCharacters characters={favCharacters} handleCharClick={this.removeFromFavorites} />
-                <Characters characters={characters} char={character} addToFavorites={this.addToFavorites} handleCharClick={this.handleCharacterClick} removeChar={this.removeChar}/>
+                {character ? <CharacterInfo character={character} addToFavorites={this.addToFavorites} removeChar={this.removeChar}/> : <Characters characters={characters} handleCharClick={this.handleCharacterClick}/>}
             </div>
         )
     }
