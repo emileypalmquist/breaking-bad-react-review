@@ -1,17 +1,20 @@
 - *yarn install*
 - *yarn start*
 
-**Component Heirarchy**
+##**Component Heirarchy**
 
+```
 App.js
 └───CharactersPage.js
     ├───FavCharacters.js
-    ├       └───CharacterCard.js
+    |       └───CharacterCard.js
     ├───Characters.js
-    ├       └───CharacterCard.js
+    |       └───CharacterCard.js
     └───CharacterInfo
+```
 
-**Tasks**
+
+##**Tasks**
 
 1. render FavCharacters and Characters in CharacterPage (we want FavCharacters to show on the page above Characters)
 2. fetch all of the breaking bad characters from the breaking bad api ('// https://www.breakingbadapi.com/api/characters')
@@ -23,7 +26,7 @@ App.js
 8. When a character is clicked on in the FavCharacters, it should be removed from FavCharacters
 
 
-**Things to think about**
+##**Things to think about**
 
 - What should be stored in state?
 - Which component will hold state?
