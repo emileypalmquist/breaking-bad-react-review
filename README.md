@@ -2,13 +2,15 @@
 -*yarn start*
 
 **Component Heirarchy**
+```
 App.js
 └───CharactersPage.js
     ├───FavCharacters.js
-    ├       └───CharacterCard.js
+    |       └───CharacterCard.js
     ├───Characters.js
-    ├       └───CharacterCard.js
+    |       └───CharacterCard.js
     └───CharacterInfo
+```
 
 **Tasks**
 
