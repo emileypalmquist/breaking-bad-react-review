@@ -2,13 +2,13 @@
 *yarn start*
 
 **Component Heirarchy**
--App.js
-    -CharactersPage.js
-        -FavCharacters.js
-            -CharacterCard.js
-        -Characters.js
-            -CharacterCard.js
-        -CharacterInfo
+---App.js
+    ---CharactersPage.js
+        ---FavCharacters.js
+            ---CharacterCard.js
+        ---Characters.js
+            ---CharacterCard.js
+        ---CharacterInfo
 
 **Tasks**
 
